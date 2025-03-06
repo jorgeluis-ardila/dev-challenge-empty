@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
+<style>
+  img {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: block;
+  }
+</style>
 <body>
-  
+  <picture>
+    <source media="(min-width: 1024px)" srcset="images/desktop-image.jpg">
+    <source media="(min-width: 768px)" srcset="images/tablet-image.jpg">
+    <img src="images/mobile-image.jpg" alt="Responsive image">
+  </picture>
 </body>
 </html>
